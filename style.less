@@ -1,0 +1,58 @@
+@left: 150px;
+@top: 250px;
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    border: 1px solid #000;
+    float: left;
+}
+
+.one {
+    background-color: yellow
+    background-image: @skirtIMAGE;
+}
+
+.one:hover {
+    z-index: 6;
+}
+
+.two {
+    background-color: bisque;
+    left: @left - (@left + 120px);
+    top: @top - 220px;
+}
+
+.two:hover {
+     z-index: 6;
+}
+
+.three {
+    background-color: orange;
+    left: @left - (@left * 2 + 90px);
+    top: @top - (@top - 60px);
+}
+
+.three:hover {
+     z-index: 6;
+}
+
+.four {
+    background-color: red;
+    left: @left - (@left * 3 + 60px);
+    top: @top - (@top - 90px);
+}
+
+.four:hover {
+     z-index: 6;
+}
+
+.five {
+    background-color: green;
+    left: @left - (@left * 4 + 30px);
+    top: @top - (@top - 120px);
